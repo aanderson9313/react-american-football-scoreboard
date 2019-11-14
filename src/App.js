@@ -11,7 +11,6 @@ function App() {
 
 const homeTouchdown = event => {
   homeScoreCount( homeScore + 7)
-  
 };
 
 const homeFieldGoal = event  => {
@@ -46,9 +45,10 @@ const awayFieldGoal = event => {
         <BottomRow />
       </section>
       <section className="buttons">
+     
         <div className="homeButtons">
           {/* TODO STEP 4 - Now we need to attach our state setter functions to click listeners. */}
-          <button className="homeButtons__touchdown" onClick = {homeTouchdown} >Home Touchdown</button>
+          <button className="homeButtons__touchdown" onClick = {homeTouchdown}>Home Touchdown</button>
           <button className="homeButtons__fieldGoal" onClick = {homeFieldGoal}>Home Field Goal</button>
         </div>
         <div className="awayButtons">
